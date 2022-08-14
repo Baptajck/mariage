@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v1
         with:
           name: deploy_dist
-          path: dist
+          path: build
   deploy:
     name: Deploy to Github Pages
     runs-on: ubuntu-latest
