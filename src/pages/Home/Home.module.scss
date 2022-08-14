@@ -1,0 +1,32 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+  justify-content: space-around;
+}
+
+.containerImg {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+
+  & .img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .containerImg {
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    & .img {
+      width: 400px;
+      margin: 2rem 0 0;
+    }
+  }
+}
